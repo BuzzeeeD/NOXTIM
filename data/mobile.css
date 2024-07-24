@@ -17,31 +17,35 @@ body, html {
 #menu {
     position: absolute;
     bottom: 4px;
-    left: 75%;
-    height: 45%;
-    width: 40%;
+    left: 50%;
     transform: translateX(-50%);
+    height: auto;
+    width: auto;
     background: rgba(255, 255, 255, 0.849);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
     padding: 4px;
     z-index: 1000;
     font-weight: bold;
-        overflow-y: auto;
-    border-radius: 3px;
-    z-index: 1000;
+    overflow-y: auto;
     border-radius: 8px;
+    display: flex; /* Utiliza flexbox para alinhar os botões */
+    flex-wrap: wrap; /* Permite que os botões se ajustem em múltiplas linhas se necessário */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
 }
 
 #menu button {
-    padding: 7px 15px;
+    padding: 10px 20px;
     border: none;
     font-weight: bold;
     background: #ffffffb0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
-    margin: 5px 5px;
+    margin: 5px;
     color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
+    flex: 1 1 auto; /* Permite que os botões se expandam igualmente */
+    max-width: 150px; /* Define uma largura máxima para os botões */
 }
 
 #menu button:hover {
